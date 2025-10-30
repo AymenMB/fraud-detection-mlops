@@ -1,13 +1,13 @@
 import pandas as pd
+import numpy as np
 
-# Load dataset
-df = pd.read_csv('data.csv')
+# Load dataset from main data source
+df = pd.read_csv('main_data.csv')
 
-# Display first rows
+# Display information
+print("=== MAIN BRANCH VERSION ===")
+print(f"Dataset shape: {df.shape}")
 print(df.head())
 
-# Basic statistics
+# Statistics
 print(df.describe())
-
-# Check for missing values
-print(df.isnull().sum())
